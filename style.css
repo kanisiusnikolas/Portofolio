@@ -1,0 +1,280 @@
+:root {
+    --bg-nav: #ffe5cc;
+    --bg-hero: #dce8fa;
+    --bg-services: #fff5cc;
+    --bg-about: #e3d7ec;
+    --bg-contact: #d1e7dd;
+    --bg-footer: #ffe5cc;
+    --border-dark: #333333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #222;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* NAVBAR HEADER */
+.navbar-custom {
+    background-color: var(--bg-nav);
+    border-bottom: 2px solid #e0c8b0;
+    padding: 15px 0;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid var(--border-dark);
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 0.85rem;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #222;
+    font-weight: 600;
+}
+
+/* HERO */
+#home {
+    background-color: var(--bg-hero);
+    padding: 70px 0;
+    text-align: center;
+}
+
+#home h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#home .subtitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#home p {
+    max-width: 650px;
+    margin: 0 auto 20px auto;
+    color: #555;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn {
+    padding: 10px 22px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background-color: #0d6efd;
+    color: #fff;
+    border: none;
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: #333;
+    border: 2px solid #333;
+}
+
+/* BADGE */
+.badge-title {
+    background-color: #fff;
+    border: 2px solid var(--border-dark);
+    border-radius: 12px;
+    padding: 8px 35px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 35px;
+}
+
+/* SERVICES */
+#services {
+    background-color: var(--bg-services);
+    padding: 60px 0;
+    text-align: center;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.service-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* ABOUT */
+#about {
+    background-color: var(--bg-about);
+    padding: 60px 0;
+    text-align: center;
+}
+
+.about-intro {
+    max-width: 750px;
+    margin: 0 auto 40px auto;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    text-align: left;
+    align-items: center;
+}
+
+.wave-box {
+    background-color: #fff;
+    border: 2px solid var(--border-dark);
+    border-radius: 16px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.perf-item .num {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #0d6efd;
+}
+
+.perf-item .label {
+    font-size: 0.8rem;
+    color: #666;
+}
+
+/* CONTACT */
+#contact {
+    background-color: var(--bg-contact);
+    padding: 60px 0;
+    text-align: center;
+}
+
+.contact-form {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid var(--border-dark);
+    border-radius: 8px;
+    font-size: 0.95rem;
+    background-color: #fff;
+    outline: none;
+}
+
+textarea.form-input {
+    resize: vertical;
+    margin-bottom: 20px;
+}
+
+.btn-submit {
+    background-color: #0052cc;
+    color: #fff;
+    border: none;
+    padding: 10px 30px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--bg-footer);
+    border-top: 2px solid #e0c8b0;
+    padding: 20px 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* RESPONSIVE HP */
+@media (max-width: 768px) {
+    .services-grid, .about-grid, .form-row {
+        grid-template-columns: 1fr;
+        flex-direction: column;
+    }
+
+    .about-grid {
+        text-align: center;
+    }
+
+    .nav-wrapper {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Styling Logo Gambar Bulat */
+.logo-img {
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid var(--border-dark);
+    background-color: #ffffff;
+    display: block;
+}
+
+/* Menghilangkan underline default jika dipasangi tag <a> */
+.logo-link {
+    text-decoration: none;
+}
