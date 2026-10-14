@@ -1,0 +1,9 @@
+==================================================
+INFORMASI REPOSITORI PORTOFOLIO MEKATRONIKA
+==================================================
+Nama Mahasiswa : Kanisius Nikolas Candra
+NIM            : 20246039
+URL Repository : https://github.com/kanisiusnikolas/Portofolio
+Branch Utama   : main
+Branch Latihan : Web-Bootstrap
+==================================================
